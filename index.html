@@ -17,7 +17,7 @@
             padding: 15px;
             text-align: center;
             color: white;
-            font-size: 22px;
+            font-size: 35px;
         }
 
         .container {
@@ -61,29 +61,43 @@
         <a href="#">Giới thiệu</a>
         <a href="#">Liên hệ</a>
     </nav>
- <!-- Popup quảng cáo -->
-    <div id="adPopup">
-        <button id="closeBtn">&times;</button>
-        <a href="https://s.shopee.vn/5q06bNAwTb" target="_blank">
-            <img src="D:\diorama\Shopee-logo-1.jpg"500x500?text=Shopee" alt="Shopee">
-        </a>
+ 
+</style>
+</head>
+
+
+<!-- Lớp phủ mờ + quảng cáo -->
+<div id="ad-overlay">
+  <div id="ad-box">
+    <button id="ad-close">×</button>
+
+    <!-- Ảnh quảng cáo -->
+    <img id="ad-img"
+      src="https://via.placeholder.com/600x300?text=Shopee"
+      alt="Shopee">
+
+    <div style="padding: 12px;">
+      <h3 style="margin:0 0 6px;">Deal Shopee Hot!</h3>
+      <p style="margin:0; font-size:14px;">Nhấn nút X để mở Shopee.</p>
     </div>
+  </div>
+</div>
 
-    <script>
-        const popup = document.getElementById('adPopup');
-        const closeBtn = document.getElementById('closeBtn');
 
-        // Hiển thị popup ngay khi load trang
-        window.addEventListener('load', () => {
-            popup.style.display = 'block';
-        });
+<script>
+  // Link Shopee (đổi thành link của bạn)
+  const shopeeLink = "https://shopee.vn/";
 
-        // Khi nhấn nút đóng: mở link Shopee trong tab mới và ẩn popup
-        closeBtn.addEventListener('click', () => {
-            window.open('https://s.shopee.vn/5q06bNAwTb', '_blank'); // Mở tab mới
-            popup.style.display = 'none'; // Ẩn popup trên trang chính
-        });
-    </script>
+  const overlay = document.getElementById("ad-overlay");
+  const closeBtn = document.getElementById("ad-close");
+
+  // Nhấn X → mở tab mới + ẩn quảng cáo
+  closeBtn.addEventListener("click", () => {
+    window.open(shopeeLink, "_blank");
+    overlay.classList.add("hidden");
+  });
+</script>
+
 
 </body>
 </html>
@@ -93,10 +107,13 @@
        
 <div class="gallery">
         <a href="https://drive.google.com/file/d/1mvD5hrMfBC22dZUq1_jTluwfwM7bMyCm/view?usp=sharing" target="_blank">
-            <img src="C:\Users\NHH\OneDrive\Desktop\-starbucks.jpg" alt="ảnh" width="200" height="300">
+            <img src="C:\Users\NHH\OneDrive\Desktop\-starbucks.jpg" alt="ảnh" width="500" height="750">
         </a> 
+
+
+
 <div class="gallery">
         <a href="https://drive.google.com/file/d/1fYSjTaRIGCwzx_J-u4XdwqqesHDWL6EI/view?usp=sharing" target="_blank">
-            <img src="C:\Users\NHH\OneDrive\Desktop\Lawson 1.jpg" alt="ảnh" width="200" height="300">
+            <img src="C:\Users\NHH\OneDrive\Desktop\Lawson 1.jpg" alt="ảnh" width="500" height="750">
         </a>
  
