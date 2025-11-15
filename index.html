@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>HUU HAU</title>
+       <style>
+        /* Reset cơ bản và font */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        main {
+            padding: 15px 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        /* Responsive text cho điện thoại nhỏ */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HUU HAU</h1>
+    </header>
+
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+ <!-- Popup quảng cáo -->
+    <div id="adPopup">
+        <button id="closeBtn">&times;</button>
+        <a href="https://s.shopee.vn/5q06bNAwTb" target="_blank">
+            <img src="D:\diorama\Shopee-logo-1.jpg"400x400?text=Shopee" alt="Shopee">
+        </a>
+    </div>
+
+    <script>
+        const popup = document.getElementById('adPopup');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // Hiển thị popup ngay khi load trang
+        window.addEventListener('load', () => {
+            popup.style.display = 'block';
+        });
+
+        // Khi nhấn nút đóng: mở link Shopee trong tab mới và ẩn popup
+        closeBtn.addEventListener('click', () => {
+            window.open('https://s.shopee.vn/5q06bNAwTb', '_blank'); // Mở tab mới
+            popup.style.display = 'none'; // Ẩn popup trên trang chính
+        });
+    </script>
+
+</body>
+</html>
+
+    <main>
+        <p>Dưới đây mình chia sẻ file diorama. Các bạn nhấn vào ảnh để tải về nhé..</p>
+       
+<div class="gallery">
+        <a href="https://drive.google.com/file/d/1mvD5hrMfBC22dZUq1_jTluwfwM7bMyCm/view?usp=sharing" target="_blank">
+            <img src="D:\diorama\starbucks.jpg" alt="ảnh" width="200" height="300">
+        </a> 
+<div class="gallery">
+        <a href="https://drive.google.com/file/d/1fYSjTaRIGCwzx_J-u4XdwqqesHDWL6EI/view?usp=sharing" target="_blank">
+            <img src="D:\diorama\Lawson 1.jpg" alt="ảnh" width="200" height="300">
+        </a>
+ 
